@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=VT323&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    </head>
+    <body id="about-me">
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="Porfolio.html">Home</a></li>
+                    <li><a href="Aboutme.html">About Me</a></li>
+                    <li><a href="projects.html">Projects </a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+        <div id="about">
+            <div class="container-about-page">
+                <div class="row">
+                    <div data-aos="fade-right" class="about-image">
+                        <img src="./images/1731604126305.jpg">
+                    </div>
+                    <div class="about-text">
+                        <h1 class="subtitle">About Me</h1>
+                        <p>I am a dedicated individual with a passion for both coding and storytelling...</p>
+        
+                        <div class="tab-titles">
+                            <p class="tabs active-tab" onclick="opentab('about-skills')">Skills</p>
+                            <p class="tabs" onclick="opentab('about-education')">Education</p>
+                        </div>
+                        <div class="tab-content active-tab" id="about-skills">
+                            <ul>
+                                <li><span>Html</span><br>Structuring Web content</li>
+                                <li><span>CSS</span><br> Visual Layouts</li>
+                                <li><span>Java</span><br> Developing functional programs</li>
+                            </ul>
+                        </div>
+                        <div class="tab-content" id="about-education">
+                            <ul>
+                                <li><span>High School</span><br>Top 5 Student </li>
+                                <li><span>Code Brave</span><br> Web Coding student</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="about">
+            <div class="container">
+                <div class="row-2">
+                    <div class="about-text">
+                        <h1 class="subtitle">Active Volunteer</h1>
+                         <p>Volunteering has been a deeply rewarding experience for me. It gives me a sense of purpose and allows me to connect with others in meaningful ways. I’ve learned the value of compassion and how small efforts can make a big impact. It’s a constant reminder that helping others also helps me grow as a person.
+
+                         </p>   
+                        <div class="tab-titles">
+                            <p class="tabs active-tab" onclick="opentab('volunteer-lifesculptor')">Life Sculptor</p>
+                            <p class="tabs" onclick="opentab('volunteer-ebdaa')">Ebdaa Center</p>
+                            <p class="tabs" onclick="opentab('volunteer-hayat')">AL-Hayat Association</p>
+                        </div>
+                        <div class="tab-content active-tab" id="volunteer-lifesculptor">
+                            <ul>
+                                <li><span>Research Department </span><br>Searching on different topics</li>
+                                <li><span>Public Relation Management</span><br>Contacting with other clubs</li>
+                            </ul>
+                        </div>
+                        <div class="tab-content" id="volunteer-ebdaa">
+                            <ul>
+                                <li><span>Tutoring Kids</span><br>Different 3 subjects: Math/English/Biology</li>
+                            </ul>
+                        </div>
+                        <div class="tab-content" id="volunteer-hayat">
+                            <ul>
+                                <li><span>Painting Orphanage walls</span><br>Painting colorful Drawings</li>
+                                <li><span>Organizing Ramadan Iftar</span><br>Helping in Ramadan Iftar</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div data-aos="fade-left" class="about-image">
+                        <img class="volunteer-img" src="./images/Snapchat-1058198114.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+<script>
+     function opentab(tabname) {
+   
+    var tabs = document.getElementsByClassName("tabs");
+    var tabcontent = document.getElementsByClassName("tab-content");
+
+    for (let tab of tabs) {
+        tab.classList.remove("active-tab");
+    }
+   
+    for (let content of tabcontent) {
+        content.classList.remove("active-tab");
+    }
+    document.querySelector(`[onclick="opentab('${tabname}')"]`).classList.add("active-tab");
+
+       document.getElementById(tabname).classList.add("active-tab");
+}
+   
+        
+  </script>   
+        
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+ <script>
+    AOS.init({
+        duration: 1000, 
+        once: false, 
+       easing: 'ease-in-out'
+    });
+</script>
+
+
+    </body>
+</html>
